@@ -1,0 +1,7 @@
+#!/bin/bash
+#
+# nothing fancy
+# just run the commands to get it launched
+#
+docker build -t registry.local:5000/console:latest .
+docker push registry.local:5000/console:latest
