@@ -3,7 +3,7 @@ MAINTAINER kellman
 RUN \
         apk -Uuv add --no-cache --update \ 
 	git nodejs python py-pip python3 ncurses unrar curl jq tree groff less vim screen \ 
-        lynx build-base linux-pam rsync openssh-client sudo perl irssi irssi-perl && \
+        lynx build-base linux-pam rsync openssl openssh-client sudo perl irssi irssi-perl && \
 	chmod u+s /usr/bin/passwd && \
 	echo "Gateway To The Sky Project" > /etc/motd && \
 	echo "IronMan Release " >> /etc/motd && \
