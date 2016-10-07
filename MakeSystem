@@ -3,5 +3,13 @@
 # nothing fancy
 # just run the commands to get it launched
 #
+
+while IFS= read -r char
+do
+echo "ENV $char" >> $PWD/Dockerfile
+done < "/efs/services/environment"
+echo "ENTRYPOINT [\"node\"]" >> $PWD/Dockerfile
+echo "CMD [\"app.js\", \"-p\", \"3000\"]" >> $PWD/Dockerfile
+
 docker build -t registry.local:5000/console:latest .
 docker push registry.local:5000/console:latest
