@@ -13,7 +13,6 @@ RUN \
 	pip install awscli && \
 	pip install aws-shell && \
 	npm install -g azure-cli && \
-	npm install -g hexo-cli && \
 	mkdir -p /tmp/build && cd /tmp/build && \
 	curl -L https://github.com/coreos/etcd/releases/download/v3.0.9/etcd-v3.0.9-linux-amd64.tar.gz -o etcd-v3.0.9-linux-amd64.tar.gz && \
 	tar xzvf etcd-v3.0.9-linux-amd64.tar.gz && cd etcd-v3.0.9-linux-amd64 && \
