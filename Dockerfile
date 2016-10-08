@@ -8,4 +8,5 @@ RUN \
 	npm install && \
 	rm -rf /root/.cache
 EXPOSE 3000
+USER root
 WORKDIR /opt/wetty
