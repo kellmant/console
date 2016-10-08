@@ -1,5 +1,6 @@
 FROM registry.local:5000/ctrl:latest
 MAINTAINER kellman
+USER root
 RUN \
 	mkdir -p /opt/ && \
 	cd /opt/ && \
@@ -8,5 +9,4 @@ RUN \
 	npm install && \
 	rm -rf /root/.cache
 EXPOSE 3000
-USER root
 WORKDIR /opt/wetty
