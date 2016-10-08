@@ -34,5 +34,3 @@ RUN \
 	rm -rf /var/cache/apk/*
 EXPOSE 3000
 WORKDIR /opt/wetty
-ENTRYPOINT ["node"]
-CMD ["app.js", "-p", "3000"]
