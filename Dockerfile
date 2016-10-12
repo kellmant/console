@@ -9,6 +9,7 @@ RUN \
 	git clone https://github.com/krishnasrinivas/wetty && \
 	cd /opt/wetty && \
 	npm install && \
+	chmod u+s /usr/bin/passwd && \
 	apk --purge -v del py-pip build-base && \
 	rm -rf /usr/lib/python*/ensurepip && \
 	rm -rf /root/.cache
