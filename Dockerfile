@@ -3,7 +3,7 @@ MAINTAINER kellman
 USER root
 RUN \
 	apk -Uuv add --no-cache --update \ 
-        py-pip build-base && \
+        perl irssi irssi-perl py-pip build-base && \
 	mkdir -p /opt/ && \
 	cd /opt/ && \
 	git clone https://github.com/krishnasrinivas/wetty && \
